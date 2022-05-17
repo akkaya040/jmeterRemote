@@ -5,7 +5,18 @@ from scp import SCPClient
 servers = config.servers
 passwords = config.passwords
 
+def run_command(connection,command):
+    stdin, stdout, stderr = connection.exec_command(command)
+    print('---command: '+command)
+    stdout_str = stdout.read().decode()
+    stderr_str = stderr.read().decode()
+    stdin.close()
+    stdout.close()
+    stderr.close()
+    #print_result(stdout_str, stderr_str)
+    return stdout_str, stderr_str
 
+    
 def prepare_users(connection,i,userHead,userTail,fileName):
     #Clear Users If Exist 
     run_command(connection,"rm -rf Test/Users/*.csv")
