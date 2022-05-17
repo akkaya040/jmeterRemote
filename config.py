@@ -9,6 +9,9 @@ port=22
 servers = ["192.168.2.20","192.168.2.21","192.168.2.22"]
 passwords = ["p4ssw0rd!","p4ssw0rd!","@p4ssw0rd!"]
 
+#Total Test Users Count
+user_count = 20000
+
 #Local Path Data For Copying To Remote Machines
 local_jmeter_path = cwd+'\\apache-jmeter-5.4.1.tar'
 local_csv_path = cwd+'\\Tests\\currencySet.csv'

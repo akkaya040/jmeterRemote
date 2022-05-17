@@ -5,6 +5,26 @@ from scp import SCPClient
 servers = config.servers
 passwords = config.passwords
 
+
+def prepare_users(connection,i,userHead,userTail,fileName):
+    #Clear Users If Exist 
+    run_command(connection,"rm -rf Test/Users/*.csv")
+    
+    print("User will be prepared...")
+    total_user = config.user_count #total users will be seperated for each remote machine.
+    server_count = len(servers)
+    j=total_user/server_count
+    print('i=',i)
+    start=str(int(1+i*j))
+    stop=str(int((1+i)*j))
+    print('start= ',start,' stop= ',stop)
+
+    cmd1="counter="+start+";end="+stop+"; while [[ $counter -le $end ]]; do echo '"+userHead+"'$counter'"+userTail+"'>>"+"Test/Users/"+fileName+".csv; counter=$((counter+1)); done"
+    run_command(connection,cmd1)
+
+    print("User preparation was done...")
+
+
 def connect_to_server(server,passw):
     ssh_client = paramiko.SSHClient()
     ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
