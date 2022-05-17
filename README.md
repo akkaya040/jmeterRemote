@@ -21,6 +21,13 @@ Script requires [Python](https://www.python.org/) to run.
 
 Install the dependencies.
 ```sh
+pip install -r requirements.txt
+```
+
+OR
+
+
+```sh
 pip install paramiko
 
 
