@@ -5,6 +5,30 @@ from scp import SCPClient
 servers = config.servers
 passwords = config.passwords
 
+
+def print_result(stdout_str, stderr_str ):
+    print('------------------------------------------------------------------------------------')
+    if stdout_str != None :
+        print(stdout_str)
+    if stderr_str != None :
+        print(stderr_str)
+    print('------------------------------------------------------------------------------------')
+
+
+def run_sudo_command(connection,sudo_password,command):
+
+    command = "sudo -S -p '' " + command
+
+    stdin, stdout, stderr = connection.exec_command(command)
+    print('---command: '+command)
+    stdin.write(sudo_password+"\n")
+    stdin.flush()
+    stdout_str = stdout.read().decode()
+    stderr_str = stderr.read().decode()
+    print_result(stdout_str, stderr_str)
+    return stdout_str, stderr_str
+
+
 def run_command(connection,command):
     stdin, stdout, stderr = connection.exec_command(command)
     print('---command: '+command)
@@ -16,7 +40,7 @@ def run_command(connection,command):
     #print_result(stdout_str, stderr_str)
     return stdout_str, stderr_str
 
-    
+
 def prepare_users(connection,i,userHead,userTail,fileName):
     #Clear Users If Exist 
     run_command(connection,"rm -rf Test/Users/*.csv")
