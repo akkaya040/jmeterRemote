@@ -88,7 +88,34 @@ def prep_users():
 
 
 def install():
-    pass
+    print("Installation has just started...")
+    for i in range(len(servers)):
+        connection = connect_to_server(server=servers[i],passw=passwords[i])
+        
+        ###Jmeter To Remote Machine
+        copy_file_from_windows(connection,config.local_jmeter_path,config.remote_working_path) 
+        
+        ###Untar Jmeter
+        run_command(connection,"tar -xvf *.tar") 
+        
+        ###Install Java Dependecies Jdk,Jre For Jmeter---
+        run_sudo_command(connection,passwords[i],"apt install -y openjdk-11-jdk-headless")
+        run_sudo_command(connection,passwords[i],"apt install -y openjdk-11-jre-headless")
+
+        ###Control Jmeter
+        run_command(connection,"~/apache-jmeter-5.4.1/bin/jmeter --version")
+
+        ###Create Test/ and Test/Users directories
+        run_command(connection,"mkdir Test;cd Test;mkdir Users;cd ..;")
+        
+        ###Get Test Scripts
+        copy_file_from_windows(connection,config.local_csv_path,config.remote_tests_path)
+        copy_file_from_windows(connection,config.local_test_path,config.remote_tests_path)
+        copy_file_from_windows(connection,config.local_smoketest_path,config.remote_tests_path)
+
+        connection.close()
+        print("Server connection was closed...")
+        print("Installation was done ...")
 
 
 def main():
