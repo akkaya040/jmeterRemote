@@ -80,7 +80,20 @@ def control_installation():
 
 
 def run_test():
-    pass
+    test_name=input("Please enter which test would you like to run ? (TestSmoke | Test): ")
+    if test_name == "TestSmoke":
+        testcmd="~/apache-jmeter-5.4.1/bin/jmeter -n -t Test/" +test_name + ".jmx"
+    elif test_name == "Test":
+        testcmd="~/apache-jmeter-5.4.1/bin/jmeter -n -t Test/" +test_name + ".jmx"
+    else:
+        print("The file is not exist which is entered.")
+        return
+
+    print("Test will have been started...")
+    for i in range(len(servers)):
+        connection = connect_to_server(server=servers[i],passw=passwords[i])
+        #run_command(connection,testcmd)
+    print("Tests were started...")
 
 
 def prep_users():
