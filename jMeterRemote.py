@@ -76,7 +76,49 @@ def copy_file_from_windows(connection,localPath,remotePath):
 
 
 def control_installation():
-    pass
+    print( "Controls Started...")
+    control_java=[]
+    control_apache=[]
+    control_test=[]
+    control_users=[]
+    for i in range(len(servers)):
+        connection = connect_to_server(server=servers[i],passw=passwords[i])
+        
+        stdout_str, stderr_str = run_command(connection,"~/apache-jmeter-5.4.1/bin/jmeter --version")
+        if "5.4.1" in stdout_str:
+            control_apache.append(servers[i]+' Jmeter exist: TRUE')
+        else:
+            control_apache.append(servers[i]+' Jmeter exist: FALSE')
+            
+        stdout_str, stderr_str = run_command(connection,"ls ~/Test/")
+        if "currencySet.csv" in stdout_str and "Test.jmx" in stdout_str and "TestSmoke.jmx" in stdout_str:
+            control_test.append(servers[i]+' Test files exist: TRUE')
+        else:
+            control_test.append(servers[i]+' Test files exist: FALSE')
+
+        stdout_str, stderr_str = run_command(connection,"java --version")
+        if "OpenJDK Runtime Environment" in stdout_str:
+            control_java.append(servers[i]+' Java exist: TRUE')
+        else:
+            control_java.append(servers[i]+' Java exist: FALSE')
+        
+        stdout_str, stderr_str = run_command(connection,"ls Test/Users/")
+        if "User_Market_Buyer.csv" in stdout_str and "User_Limit_Seller.csv" in stdout_str and "User_Limit_Buyer.csv" in stdout_str and "User_Market_Seller.csv" in stdout_str :
+            control_users.append(servers[i]+' Users exist: TRUE')
+        else:
+            control_users.append(servers[i]+' Users exist: FALSE')
+        
+
+        connection.close()
+    print("---------------------------------")
+    print(*control_java, sep = "\n")
+    print("---------------------------------")
+    print(*control_apache, sep = "\n")
+    print("---------------------------------")
+    print(*control_test, sep = "\n")
+    print("---------------------------------")
+    print(*control_users, sep = "\n")
+    print("---------------------------------")
 
 
 def run_test():
