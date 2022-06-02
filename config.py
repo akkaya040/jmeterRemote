@@ -4,7 +4,7 @@ import os
 cwd = os.getcwd()
 
 #Configuration variables
-username = 'remoteServerUserName'
+username = 'akkaya'
 port=22
 servers = ["192.168.2.20","192.168.2.21","192.168.2.22"]
 passwords = ["p4ssw0rd!","p4ssw0rd!","@p4ssw0rd!"]
@@ -14,7 +14,7 @@ user_count = 20000
 
 #Local Path Data For Copying To Remote Machines
 local_jmeter_path = cwd+'\\apache-jmeter-5.4.1.tar'
-local_csv_path = cwd+'\\Tests\\currencySet.csv'
+local_csv_path = cwd+'\\Tests\\dataSet.csv'
 local_test_path = cwd+'\\Tests\\Test.jmx'
 local_smoketest_path = cwd+'\\Tests\\TestSmoke.jmx'
 

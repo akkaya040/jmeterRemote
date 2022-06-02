@@ -139,7 +139,9 @@ def run_test():
 
 
 def prep_users():
-    pass
+    for i in range(len(servers)):
+        connection = connect_to_server(server=servers[i],passw=passwords[i])
+        prepare_users(connection,i)
 
 
 def install():
