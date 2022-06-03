@@ -13,10 +13,14 @@ Please select a task ?
 - 5- Exit
 
 ## Features
-- 1- Install: Installation for the remote machine requirements such as (Java Install etc...)
-- 2- Control Installation
+- 1- Install: 
+	Installation for the remote machine requirements such as (Java Install etc...)
+- 2- Control Installation:
+	It controls the uploads and file transfers. Lists incomplete installations and conditions that will prevent testing on remote machines.
 - 3- Start Tests
+	Allows simultaneous initiation of testing on remote machines.
 - 4- Prepare Users
+	It divides the users you have prepared for the test according to the number of machines.
 - 5- Exit
 
 ## Installation
