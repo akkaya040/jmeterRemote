@@ -13,7 +13,11 @@ Please select a task ?
 - 5- Exit
 
 ## Features
-
+- 1- Install: Installation for the remote machine requirements such as (Java Install etc...)
+- 2- Control Installation
+- 3- Start Tests
+- 4- Prepare Users
+- 5- Exit
 
 ## Installation
 
