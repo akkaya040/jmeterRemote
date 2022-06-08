@@ -165,14 +165,22 @@ def install():
         ###Create Test/ and Test/Users directories
         run_command(connection,"mkdir Test;cd Test;mkdir Users;cd ..;")
         
+
+        connection.close()
+        print("Server connection was closed...")
+    print("Installation was done.")
+
+def transfer_test_files():
+    print("Test files transfer has just started...")
+    for i in range(len(servers)):
+        connection = connect_to_server(server=servers[i],passw=passwords[i])
         ###Get Test Scripts
         copy_file_from_windows(connection,config.local_csv_path,config.remote_tests_path)
         copy_file_from_windows(connection,config.local_test_path,config.remote_tests_path)
         copy_file_from_windows(connection,config.local_smoketest_path,config.remote_tests_path)
-
         connection.close()
-        print("Server connection was closed...")
-        print("Installation was done ...")
+    print("Test files transfer was done.")
+
 
 def task_runner(task_name):
     if task_name == "Install":
