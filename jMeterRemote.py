@@ -174,6 +174,22 @@ def install():
         print("Server connection was closed...")
         print("Installation was done ...")
 
+def task_runner(task_name):
+    if task_name == "Install":
+        print("install selected")
+        #install()
+    elif task_name == "Transfer Test Files":
+        print("transfer selected")
+    elif task_name == "Control Installation":
+        print("control selected")
+        #control_installation()
+    elif task_name == "Prepare Users":
+        print("prepare selected")
+        #prep_users()
+    elif task_name == "Start Tests":
+        print("Start selected")
+        #run_test()
+
 
 def main():
     
@@ -183,31 +199,26 @@ def main():
         "3":"Control Installation",
         "4":"Prepare Users",
         "5":"Start Tests",
-        "6":"Exit",
+        "0":"Exit",
     }
-
-    print("Please select a task ?\n1- Install\n2- Transfer Test Files\n3- Control Installation\n4- Prepare Users\n5- Start Tests\n6- Exit")
+    
+    print("Please select a task ?")
+    for taskNum in taskList:
+        print(taskNum+"- "+taskList[taskNum])
+    
     while 1:
-        i = int(input("Task: "))
-        if i == 1:
-            install()
-        elif i==2:
-            control_installation()
-        elif i==3:
-            control_installation()
-        elif i==4:
-            prep_users()
-        elif i==5:
-            run_test()
-        elif i==6:
+        i = input("Task ================> ")
+        if i=="0":
             print("Succesfully exit !!!")
             break
+        elif i in taskList:
+            task_runner(taskList[i])
         else:
             print("Unhandled Selection!")
-        print("\nPlease select a task ?\n1- Install | 2- Control Installation | 3- Prepare Users | 4- Start Tests | 5- Exit")
-
-    
-
+            
+        print("\nPlease select a task ?")
+        for taskNum in taskList:
+            print(taskNum+"- "+taskList[taskNum])
 
 
 main()
