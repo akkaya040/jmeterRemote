@@ -177,7 +177,16 @@ def install():
 
 def main():
     
-    print("Please select a task ?\n1- Install\n2- Control Installation\n3- Prepare Users\n4- Start Tests\n5- Exit")
+    taskList = {
+        "1":"Install",
+        "2":"Transfer Test Files",
+        "3":"Control Installation",
+        "4":"Prepare Users",
+        "5":"Start Tests",
+        "6":"Exit",
+    }
+
+    print("Please select a task ?\n1- Install\n2- Transfer Test Files\n3- Control Installation\n4- Prepare Users\n5- Start Tests\n6- Exit")
     while 1:
         i = int(input("Task: "))
         if i == 1:
@@ -185,10 +194,12 @@ def main():
         elif i==2:
             control_installation()
         elif i==3:
-            prep_users()
+            control_installation()
         elif i==4:
-            run_test()
+            prep_users()
         elif i==5:
+            run_test()
+        elif i==6:
             print("Succesfully exit !!!")
             break
         else:
