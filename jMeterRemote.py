@@ -176,19 +176,15 @@ def install():
 
 def task_runner(task_name):
     if task_name == "Install":
-        print("install selected")
-        #install()
+        install()
     elif task_name == "Transfer Test Files":
         print("transfer selected")
     elif task_name == "Control Installation":
-        print("control selected")
-        #control_installation()
+        control_installation()
     elif task_name == "Prepare Users":
-        print("prepare selected")
-        #prep_users()
+        prep_users()
     elif task_name == "Start Tests":
-        print("Start selected")
-        #run_test()
+        run_test()
 
 
 def main():
