@@ -4,7 +4,7 @@
 
 This script allows you to quickly transfer your jmeter scripts to remote servers and start your tests on the remote server.
 
-## Arcitecture
+## Architecture
 
 ```mermaid
 graph LR
