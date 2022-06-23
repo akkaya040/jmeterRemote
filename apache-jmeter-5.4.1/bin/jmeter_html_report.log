@@ -1,0 +1,73 @@
+2022-01-12 15:37:19,322 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2022-01-12 15:37:19,330 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2022-01-12 15:37:19,330 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2022-01-12 15:37:19,330 INFO o.a.j.JMeter: Loading additional properties from: C:\apache-jmeter-5.4.1\bin\user.properties
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: Version 5.4.1
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: java.version=1.8.0_301
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: os.name=Windows 10
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: os.arch=amd64
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: os.version=10.0
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: file.encoding=Cp1252
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: java.awt.headless=true
+2022-01-12 15:37:19,336 INFO o.a.j.JMeter: Max memory     =7572291584
+2022-01-12 15:37:19,337 INFO o.a.j.JMeter: Available Processors =8
+2022-01-12 15:37:19,340 INFO o.a.j.JMeter: Default Locale=English (United States)
+2022-01-12 15:37:19,340 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2022-01-12 15:37:19,340 INFO o.a.j.JMeter: JMeterHome=C:\apache-jmeter-5.4.1
+2022-01-12 15:37:19,340 INFO o.a.j.JMeter: user.dir  =C:\apache-jmeter-5.4.1\bin
+2022-01-12 15:37:19,340 INFO o.a.j.JMeter: PWD       =C:\apache-jmeter-5.4.1\bin
+2022-01-12 15:37:19,341 INFO o.a.j.JMeter: IP: 192.168.1.41 Name: DESKTOP-BCMRMEG FullName: host.docker.internal
+2022-01-12 15:37:19,345 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Projects\V2\Felixo.Test.Jmeter\Results\htmlRep'
+2022-01-12 15:37:19,348 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2022-01-12 15:37:19,348 INFO o.a.j.r.d.ReportGenerator: Will only generate report from results file: C:\Projects\V2\Felixo.Test.Jmeter\Results\AzureDetailedTestResults_11_01_2022_0509.jtl
+2022-01-12 15:37:19,348 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\apache-jmeter-5.4.1\bin\reportgenerator.properties
+2022-01-12 15:37:19,349 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2022-01-12 15:37:19,351 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2022-01-12 15:37:19,353 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2022-01-12 15:37:19,357 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2022-01-12 15:37:19,357 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2022-01-12 15:37:19,357 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2022-01-12 15:37:19,357 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2022-01-12 15:37:19,357 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2022-01-12 15:37:19,357 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2022-01-12 15:37:19,357 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2022-01-12 15:37:19,359 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,360 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,360 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,360 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,360 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,360 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,360 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,360 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,360 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,360 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2022-01-12 15:37:19,361 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2022-01-12 15:37:19,361 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2022-01-12 15:37:19,361 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2022-01-12 15:37:19,361 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2022-01-12 15:37:19,361 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2022-01-12 15:37:19,361 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2022-01-12 15:37:19,441 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-01-12 15:37:19,451 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-01-12 15:37:19,453 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-01-12 15:37:19,467 WARN o.a.j.s.CSVSaveService: Unknown column name <?xml version="1.0" encoding="UTF-8"?>
+2022-01-12 15:37:19,471 WARN o.a.j.r.c.CsvSampleReader: File 'C:\Projects\V2\Felixo.Test.Jmeter\Results\AzureDetailedTestResults_11_01_2022_0509.jtl' does not contain the field names header, ensure the jmeter.save.saveservice.* properties are the same as when the CSV file was created or the file may be read incorrectly when generating report
+2022-01-12 15:37:19,472 ERROR o.a.j.JMeter: An error occurred: 
+org.apache.jmeter.report.core.SampleException: Could not read sample <0>
+	at org.apache.jmeter.report.core.CsvSampleReader.nextSample(CsvSampleReader.java:194) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.report.core.CsvSampleReader.<init>(CsvSampleReader.java:135) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.report.core.CsvSampleReader.<init>(CsvSampleReader.java:87) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.report.processor.CsvFileSampleSource.<init>(CsvFileSampleSource.java:111) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.report.dashboard.ReportGenerator.generate(ReportGenerator.java:206) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.JMeter.start(JMeter.java:558) [ApacheJMeter_core.jar:5.4.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_301]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_301]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_301]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_301]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.1]
+Caused by: java.io.IOException: Cannot have quote-char in plain field:[<testResults version="]
+	at org.apache.jmeter.save.CSVSaveService.csvReadFile(CSVSaveService.java:1016) ~[ApacheJMeter_core.jar:5.4.1]
+	at org.apache.jmeter.report.core.CsvSampleReader.nextSample(CsvSampleReader.java:186) ~[ApacheJMeter_core.jar:5.4.1]
+	... 10 more

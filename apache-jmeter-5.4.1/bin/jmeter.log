@@ -1,0 +1,32 @@
+2022-05-09 12:24:48,616 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-05-09 12:24:48,616 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: Version 5.4.1
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: java.version=1.8.0_301
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: os.name=Windows 10
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: os.arch=amd64
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: os.version=10.0
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: file.encoding=Cp1252
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: java.awt.headless=null
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: Available Processors =8
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: JMeterHome=C:\apache-jmeter-5.4.1 - Copy
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: user.dir  =C:\apache-jmeter-5.4.1 - Copy\bin
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: PWD       =C:\apache-jmeter-5.4.1 - Copy\bin
+2022-05-09 12:24:48,632 INFO o.a.j.JMeter: IP: 192.168.1.36 Name: DESKTOP-BCMRMEG FullName: DESKTOP-BCMRMEG
+2022-05-09 12:24:48,704 INFO o.a.j.JMeter: Setting LAF to: laf:javax.swing.plaf.nimbus.NimbusLookAndFeel
+2022-05-09 12:24:48,785 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2022-05-09 12:24:50,175 WARN o.j.r.PluginManager: Found JAR conflict: C:\apache-jmeter-5.4.1 - Copy\lib\jmeter-plugins-cmn-jmeter-0.6.jar and C:\apache-jmeter-5.4.1 - Copy\lib\jmeter-plugins-cmn-jmeter-0.4.jar
+2022-05-09 12:24:50,175 WARN o.j.r.PluginManager: Found JAR conflict: C:\apache-jmeter-5.4.1 - Copy\lib\jmeter-plugins-cmn-jmeter-0.7.jar and C:\apache-jmeter-5.4.1 - Copy\lib\jmeter-plugins-cmn-jmeter-0.6.jar
+2022-05-09 12:24:50,175 WARN o.j.r.PluginManager: Found JAR conflict: C:\apache-jmeter-5.4.1 - Copy\lib\ext\jmeter-plugins-manager-1.6.jar and C:\apache-jmeter-5.4.1 - Copy\lib\ext\jmeter-plugins-manager-0.20.jar
+2022-05-09 12:24:50,175 WARN o.j.r.PluginManager: Found JAR conflict: C:\apache-jmeter-5.4.1 - Copy\lib\ext\jmeter-plugins-manager-1.7.jar and C:\apache-jmeter-5.4.1 - Copy\lib\ext\jmeter-plugins-manager-1.6.jar
+2022-05-09 12:24:50,175 WARN o.j.r.PluginManager: Found JAR conflict: C:\apache-jmeter-5.4.1 - Copy\lib\ext\jmeter.backendlistener.azure-0.2.7.jar and C:\apache-jmeter-5.4.1 - Copy\lib\ext\jmeter.backendlistener.azure-0.2.6.jar
+2022-05-09 12:24:50,175 WARN o.j.r.PluginManager: Found JAR conflict: C:\apache-jmeter-5.4.1 - Copy\lib\ext\jmeter.backendlistener.azure-0.2.8.jar and C:\apache-jmeter-5.4.1 - Copy\lib\ext\jmeter.backendlistener.azure-0.2.7.jar
+2022-05-09 12:24:51,397 ERROR e.l.j.w.GuiUtils: UIManager does not support color key 'Label.disabledForeground'
+2022-05-09 12:24:51,548 ERROR e.l.j.w.GuiUtils: UIManager does not support color key 'Label.disabledForeground'
+2022-05-09 12:24:53,817 INFO o.j.r.PluginManager: Plugins Status: [jpgc-graphs-basic=2.0, jmeter.backendlistener.azure=0.2.6, jpgc-casutg=2.10, jpgc-filterresults=2.2, jpgc-plugins-manager=0.20, websocket-samplers=1.2.8, jmeter-core=5.4.1, jmeter-ftp=5.4.1, jmeter-http=5.4.1, jmeter-jdbc=5.4.1, jmeter-jms=5.4.1, jmeter-junit=5.4.1, jmeter-java=5.4.1, jmeter-ldap=5.4.1, jmeter-mail=5.4.1, jmeter-mongodb=5.4.1, jmeter-native=5.4.1, jmeter-tcp=5.4.1, jmeter-components=5.4.1]
+2022-05-09 12:24:53,817 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jmeter.backendlistener.azure, jpgc-plugins-manager]
